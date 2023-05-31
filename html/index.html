@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Simple Library</h1>
+      <p>Reading books is nice</p>
+    </header>
+    <main>
+      <button class="newBook">Add a book</button>
+      <div class="table">
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read Status</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>TitleData</td>
+              <td>AuthorData</td>
+              <td>PagesData</td>
+              <td>ReadData</td>
+              <td><button>Change read status</button></td>
+              <td><button>Edit</button></td>
+              <td><button>Delete</button></td>
+            </tbody>
+          </table>
+      </div>
+      <div class="form hidden">
+        <input type="text" id="title" placeholder="title" />
+        <input type="text" id="author" placeholder="Author" />
+        <input type="number" id="pages" placeholder="123" min="0" />
+        <fieldset role="radiogroup">
+          <legend>Read book?</legend>
+          <label for="yes">
+            <input type="radio" id="yes" name="read" value="yes" checked />
+            <span>Yes</span>
+          </label>
+          <label for="no"></label>
+          <input type="radio" id="no" name="read" value="no" />
+          <span>No</span>
+        </fieldset>
+        <div class="return">
+            <button class="return">Return</button>
+            <button class="submit">Submit</button>
+
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../js/index.js"></script>
+</html>

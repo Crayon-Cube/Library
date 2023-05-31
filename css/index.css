@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  background-color: rgba(20, 53, 81, 0.566);
+  align-items: center;
+  /* justify-content: center; */
+  width: 100vw;
+}
+
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 255, 0.423);
+  height: 100%;
+  width: 100%;
+  color: rgb(15, 15, 15);
+}
+
+header {
+  color: rgba(176, 209, 237, 0.741);
+  display: flex;
+  flex: 2;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  font-size: large;
+  font-weight: 800;
+  /* margin-bottom: 10vh; */
+}
+main>button{
+    width: 30%;
+    background-color: rgba(100, 148, 237, 0.618);
+    /* height: 5vh; */
+    font-size: 30px;
+}
+header > h1 {
+  font-size: 40px;
+}
+
+main {
+  flex: 3;
+  display: flex;
+  gap:5vh;
+  flex-direction: column;
+  align-items: center;
+}
+table {
+  /* border: 10px solid rgba(20, 53, 81, 0.566); */
+  background-color: rgba(20, 53, 81, 0.566);
+  width: 60vw;
+}
+th {
+  padding: 10px 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+thead {
+  background-color: rgba(20, 53, 81, 0.566);
+  color: aliceblue;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
+  width: 50vw;
+  height: 40vh;
+}
+.form>input{
+    padding:4px;
+    height: 10%;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.return{
+    display: flex;
+    gap:10px
+}
