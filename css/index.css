@@ -8,7 +8,6 @@ body {
   width: 100vw;
 }
 
-
 button {
   cursor: pointer;
   border-radius: 10px;
@@ -31,11 +30,11 @@ header {
   font-weight: 800;
   /* margin-bottom: 10vh; */
 }
-main>button{
-    width: 30%;
-    background-color: rgba(100, 148, 237, 0.618);
-    /* height: 5vh; */
-    font-size: 30px;
+main > button {
+  width: 30%;
+  background-color: rgba(100, 148, 237, 0.618);
+  /* height: 5vh; */
+  font-size: 30px;
 }
 header > h1 {
   font-size: 40px;
@@ -44,7 +43,7 @@ header > h1 {
 main {
   flex: 3;
   display: flex;
-  gap:5vh;
+  gap: 5vh;
   flex-direction: column;
   align-items: center;
 }
@@ -71,22 +70,21 @@ thead {
 .form {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 
   width: 50vw;
   height: 40vh;
 }
-.form>input{
-    padding:4px;
-    height: 10%;
+.form > input {
+  padding: 4px;
+  height: 10%;
 }
-
 
 .hidden {
   display: none;
 }
 
-.return{
-    display: flex;
-    gap:10px
+.return {
+  display: flex;
+  gap: 10px;
 }
