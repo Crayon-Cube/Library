@@ -74,7 +74,7 @@ function getReadValue() {
   : 0;
 }
 
-function handleSubmit(e) {
+function handleSubmit() {
   console.log("submit fucntion working");
   const readValue = getReadValue();
   const newBook = new Book(title.value, author.value, pages.value, readValue);
@@ -87,16 +87,18 @@ function ChangeRead(book) {
    updateBook(book);
 }
 
-function updateBook(book,newTd) {
-  tbody.Textcontent = ''
-
+function updateBook(book,tr) {
+  tbody.textContent = ""
   const oldbookIndex = Library.findIndex(((book_)=>book_.id ==  book.id))
   console.log("read value of updatedbook"+ Library[oldbookIndex].read);
   Library[oldbookIndex].read;
   console.log(book + "Updated book");
   console.log( "Library state")
   console.log(Library );
-  newTd.textContent =  Library[oldbookIndex].read ? "Read" :"Not Read"
+  // newTd.textContent =  Library[oldbookIndex].read ? "Read" :"Not Read"
+  // tr.removeChild() 
+  displayAll()
+  console.log(tr + "tr")
   // displayBook(book)
   // Library.replace(oldbook,newBook)
 }
@@ -117,7 +119,7 @@ function displayBook(book) {
       if (prop == "read") $newTd.textContent = book[prop] ? "Read" : "Not read";
       tr.appendChild($newTd);
     } else {
-      console.log("do nothing if book.id beacause we dont want any row for");
+      console.log("do nothing if book.id beacause we dont want any row for id");
     }
   });
   
